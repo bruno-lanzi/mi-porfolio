@@ -1,0 +1,46 @@
+*{
+    
+    font-family: sans-serif;
+
+}
+body{
+
+    background: url(trofeo.jpg);
+    background-position: center;
+    
+}
+.Titulo{
+    
+    color: rgb(0, 0, 7);
+    font-size:50px ;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px rgb(255, 255, 255);
+    font-family: 'Comic Neue', cursive;
+}
+.subtitulo{
+    font-size:13px ;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255);
+    font-family: 'Comic Neue', cursive;
+}
+
+.MiBotonUTNnav{
+    background-color: rgb(71, 71, 249);
+    color: aliceblue;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 0 black ;
+    
+
+}
+.MiBotonUTNnav:hover{
+    background-color: rgb(0, 0, 249);
+    border-radius: 10px;
+}
+
+.input{
+    font-style: oblique;
+    background-color: azure;
+    box-shadow: 1px 2px 5px 0 black ;
+    padding: 10px 10px;
+}

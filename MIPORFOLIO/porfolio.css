@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+img , figure{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+video{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+}
+
+body {
+    font-family: var(--tipo-principal);
+    font-size: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color:white;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.circulos{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    z-index: 1;
+    filter: blur(50px);
+    animation: circulo1 90s ease infinite both;
+
+}
+.circulos .circulo{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    animation: circulo1 90s ease infinite both;
+
+}
+
+.circulos .circulo1{
+    top: 0%;
+    left: 0%;
+    
+}
+
+.circulos .circulo1 .path{
+    fill: blue;
+}
+
+.circulos .circulo2{
+    top: 0%;
+    right: 0%;
+}
+.circulos .circulo2 .path{
+    fill: rgb(255, 0, 212);}
+
+.circulos .circulo3{
+    bottom: 0%;
+    left: 0%;
+}
+.circulos .circulo3 .path{
+    fill: rgb(0, 255, 60);
+}
+
+.circulos .circulo4{
+    bottom: 0%;
+    right: 0%;
+}
+.circulos .circulo4 .path{
+    fill: rgb(251, 255, 0);
+}
+.header{
+    width: 100%;
+    min-width: 5em;
+    
+
+    padding: 1em 2em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    display: none;
+}
+.header .h1{
+   
+}
+.header .h1 .a{}    
+.header .nav{
+    
+}
+.header .ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .li{
+    
+    margin: 0 1em;
+}
+.header .li .a{}
+
+.main{
+    background: rgba(0, 0, 0, 0.7);
+    margin:0 0 1em;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.seccion{
+    width: 100%;
+    min-height: 80vh;
+    
+    /*margin: 1em 0;*/
+    padding: 2em;
+
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.seccion .info{
+    font-size: 1.2em;
+    animation: aparecer1 2s ease 1 both;
+}
+
+.seccion .ul{
+    /*background: red;*/
+    margin:2em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.seccion .ul .li{
+   
+    margin: 0 1em;
+}
+.seccion .ul .a{
+   border: 1px solid rgba(0,0,0, .2);
+   border-radius: 50%;
+   padding: 1em 1em 1em;
+   text-transform: uppercase;
+   font-weight: 600;
+   transition: all .5s ease;
+}
+.seccion .ul .a:hover{
+    border-color: black;
+    color: white;
+
+}
+.seccion .h2{
+    font-family: var(--tipo-titular);
+    font-weight: 600;
+    font-size: 5em;
+    line-height: 1em;
+    color:white;
+    -webkit-mix-blend-mode: screen;
+    mix-blend-mode: screen;
+
+}
+.seccion .h3{
+    font-family: var(--tipo-titular);
+    font-size: 3em;
+    font-style: italic;
+}
+
+.seccion .p{
+    
+}
+.seccion .grid{
+    width: 90%;
+    max-width: 40em;
+    margin: 1em 0;
+
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax( 10rem , 1fr));
+    gap: 1em;
+}
+.seccion .article{
+    width: 100%;
+    min-height: 20vh;
+    
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+.seccion .a{}
+.seccion .figure{
+    width: 100%;
+    
+    
+
+}
+.seccion .img{
+    width: 100%;
+    
+    
+}
+.seccion .h4{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 1.6em;
+    font-family: var(--tipo-titular);
+    font-style: italic;
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all .5s ease;
+
+}
+.seccion .article:hover .h4{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.proyecto{
+    
+    
+}
+.proyecto .h2{
+    margin: 0 0 1rem;
+    
+}
+
+.contacto{}
+.contacto .h2{
+    margin: 0 0 1rem;
+}
+.contacto .p{
+    max-width: 40rem;
+    
+    margin: 0 0 2rem;
+    font-size: 1.5em;
+    text-align: left;
+
+}
+.contacto .rrss{
+    
+    width: 100%;
+   
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contacto .li{
+   
+    margin: 0 1em;
+}
+.contacto .a{}
+.contacto .svg{
+    width: 3em;
+    height: 3em;
+    
+}
+
+.footer{
+    
+    padding: 2em 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.footer .span{}
+
+@keyframes circulo1{
+    from{
+        transform: rotate(0deg) scale(4);
+    }
+    to{
+        transform: rotate(360deg) scale(4);
+    }
+
+}
+
+@keyframes aparecer1{
+    from{
+        opacity: 0;
+        transform: translate(50%)
+    }
+    to{
+        opacity: 1;
+        transform: translate(0%)
+    }
+
+}
+
+
+
+
+
+/*<a href="https://www.freepik.es/vector-gratis/computadora-portatil-icono-isometrico-codigo-programa-desarrollo-software-aplicaciones-programacion-neon-oscuro_4102879.htm#query=programacion&position=1&from_view=search&track=sph">Imagen de fullvector</a> en Freepik*/
+/*<a href="https://www.freepik.es/vector-gratis/desarrollo-web-ingenieria-programadores-sitio-web-codificacion-pantallas-interfaz-realidad-aumentada-desarrollador-ingeniero-proyectos-software-programacion-o-diseno-aplicaciones-ilustracion-dibujos-animados_10798281.htm#query=programacion&position=15&from_view=search&track=sph">Imagen de upklyak</a> en Freepik*/

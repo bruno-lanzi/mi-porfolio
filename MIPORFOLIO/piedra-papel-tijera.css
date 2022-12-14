@@ -1,0 +1,40 @@
+
+body{background: url(fondo.jpg);
+    background-position: center;
+    background-color: rgb(199, 146, 249);
+}
+
+h1{text-transform: uppercase;
+    color:blueviolet;
+    
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.botonComenzar{ 
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: blueviolet;
+    border-radius: 15px;
+}
+.botonComenzar:hover{ 
+    
+    color: rgba(251, 251, 251, 0.999);
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: rgb(78, 0, 151);
+    border-radius: 15px;
+}
+img{
+    height: 250px;
+    width: 250px;
+    border:8px solid rgb(47, 0, 108);
+    border-radius: 180px;
+}
+img:hover{
+    height: 250px;
+    width: 250px;
+    border:5px solid rgb(197, 167, 236);
+    border-radius: 180px;
+}

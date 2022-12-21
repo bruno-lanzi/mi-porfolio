@@ -1,5 +1,5 @@
 ## Descripcion 
-    Este es mi primer porfolio, tiene dos proyectos que son juegos.
+    Este es mi primer portfolio, tiene dos proyectos que son juegos.
 
 ## Autor
 **Bruno Lanzillotta**
@@ -8,7 +8,7 @@
 
 [Github](https://github.com/bruno-lanzi)
 
-[Porfolio web](https://bruno-lanzi.github.io/PORFOLIO/MIPORFOLIO/inicio.html)
+[Portfolio web](https://bruno-lanzi.github.io/PORFOLIO/MIPORFOLIO/inicio.html)
 
 ## Ejemplo en vivo
 [https://bruno-lanzi.github.io/mi-porfolio/MIPORFOLIO/inicio.html](https://bruno-lanzi.github.io/mi-porfolio/MIPORFOLIO/inicio.html)
